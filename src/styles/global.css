@@ -1,0 +1,89 @@
+:root{
+    --primary-color:#F5EE84;
+    --secondary-color:#FBF8CC;
+    --tertiary-color:#F7F197;
+    --paragraph-color-primary:#03045E;
+    --primary-heading-color:#03045E;
+}
+
+* {
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.__portfolio-body{
+    background-color: var(--secondary-color);
+    padding: 20px 35px 20px 35px;
+}
+
+.__portfolio-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px 100px 0px;
+}
+
+.__portfolio-body .__portfolio-header .__portfolio-block-1{
+    flex: 1 1 60%;
+}
+
+.__portfolio-body .__portfolio-header .__portfolio-block-2{
+    flex: 1 1 40%;
+}
+
+.__portfolio-body .__portfolio-header .__portfolio-block-1, .__portfolio-body .__portfolio-header .__portfolio-block-2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.__portfolio-body .__portfolio-header .__portfolio-block-1 .__portfolio-content-group-1{
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--paragraph-color-primary);
+    gap: 35px;
+}
+
+
+.__portfolio-body .__portfolio-header .__portfolio-block-1 .__portfolio-content-group-1, .__portfolio-body .__portfolio-header .__portfolio-block-2 .__portfolio-content-group-2{
+    list-style-type: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.__portfolio-body .__portfolio-header .__portfolio-block-2 .__portfolio-content-group-2{
+    font-size: 20px;
+    gap: 20px;
+}
+
+.__portfolio-body .__portfolio-body-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.__portfolio-body .__portfolio-body-section .section-group-1, .__portfolio-body .__portfolio-body-section .section-group-2{
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+.__portfolio-body .__portfolio-body-section .section-group-1 .bio-name{
+    color: var(--primary-heading-color);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: normal;
+    padding: 0px 305px 0px 0px;
+}
+
+.__portfolio-body .__portfolio-body-section .section-group-1 .bio-description{
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 15px;
+    color: var(--primary-heading-color);
+}
