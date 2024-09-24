@@ -10,7 +10,7 @@ const Header = () => {
         'Services'
     ];
     return <>
-        <div className="__portfolio-header">
+        <header className="__portfolio-header">
             <div className="__portfolio-block-1">
                 <ul className="__portfolio-content-group-1">
                     {tabContents?.map((value, index) => {
@@ -35,7 +35,7 @@ const Header = () => {
                     </li>
                 </ul>
             </div>
-        </div>
+        </header>
     </>
 }
 

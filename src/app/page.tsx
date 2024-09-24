@@ -5,7 +5,10 @@ export default function Home() {
   return (
     <>
       <Header/>
-      <Content/>
+      <main>
+        <Content/>
+      </main>
+      <footer>lorem</footer>
     </>
   );
 }

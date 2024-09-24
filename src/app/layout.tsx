@@ -7,10 +7,10 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
 const poppins = Poppins({
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
   subsets: ['latin'],
-  display: 'swap'
+  display: 'swap',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
 });
 
 export const metadata: Metadata = {
@@ -24,12 +24,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${poppins.variable}`}>
       <Head>
           <title>Cupid Chakma Portfolio</title>
           <meta name="description" content="Portfolio Website"/>
       </Head>
-      <body className={`__portfolio-body ${poppins.className}`}>
+      <body className='__portfolio-body'>
         {children}
       </body>
     </html>

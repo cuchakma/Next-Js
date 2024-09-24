@@ -4,10 +4,11 @@
     --tertiary-color:#F7F197;
     --paragraph-color-primary:#03045E;
     --primary-heading-color:#03045E;
+    --resume-heading-color:#474306;
 }
 
 * {
-    font-family: 'Poppins';
+    font-family: var(--font-poppins);
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
@@ -65,14 +66,38 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    padding: 0px 90px 0px 90px;
+    padding: 0px 115px 0px 115px;
 }
 
 .__portfolio-body .__portfolio-body-section .section-group-1, .__portfolio-body .__portfolio-body-section .section-group-2{
     flex: 1 1 50%;
 }
 
-.__portfolio-body .__portfolio-body-section .section-group-1 .bio-name{
+.__portfolio-body .__portfolio-body-section .section-group-1 .resume-border{
+    height: 60px;
+    width: 160px;
+    border: 1px solid var(--resume-heading-color);
+    border-radius: 6px;
+}
+
+.__portfolio-body .__portfolio-body-section .section-group-1 .resume-content{
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--resume-heading-color);
+    padding: 15px 40px 15px 40px;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    position: relative;
+    top: -53px;
+    left: 5px;
+}
+
+.__portfolio-body .__portfolio-body-section .section-group-1 .resume-border{
+    z-index: 2;
+    margin: 15px 0px 0px 0px;
+}
+
+.__portfolio-body .__portfolio-body-section .section-group-1 .bio-name, .__portfolio-body .__portfolio-body-section .section-group-1 .bio-country{
     color: var(--primary-heading-color);
     font-size: 28px;
     font-weight: 500;
@@ -83,7 +108,7 @@
 .__portfolio-body .__portfolio-body-section .section-group-1 .bio-designation-group-1, .__portfolio-body .__portfolio-body-section .section-group-1 .bio-designation-group-2{
     font-size: 100px;
     font-weight: bold;
-    letter-spacing: 15px;
+    letter-spacing: 5px;
     color: var(--primary-heading-color);
 }
 
