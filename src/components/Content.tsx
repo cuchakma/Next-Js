@@ -14,59 +14,12 @@ const Content = () => {
     return <>
         <section className="__portfolio-body-section">
             <div className="section-group-1">
-                <TypeAnimation wrapper="p" className="bio-name" sequence={[
-                    "Hello, I'm Cupid Chakma",
-                    500,
-                    (data) => {
-                        if (data != null) {
-                            data.className = 'bio-name';
-                        }
-                        setFirstSequence(true);
-                    }
-                ]} cursor={true} />
-                {firstSquence && <TypeAnimation wrapper="h2" className="bio-designation-group-1" sequence={[
-                    'Wordpress',
-                    500,
-                    (data) => {
-                        if (data != null) {
-                            data.className = 'bio-designation-group-1';
-                        }
-                        setSecondSequence(true);
-                    }
-                ]} cursor={true} />}
-                {secondSequence && <TypeAnimation wrapper="h2" className="bio-designation-group-2" sequence={[
-                    'Engineer',
-                    500,
-                    (data) => {
-                        if (data != null) {
-                            data.className = 'bio-designation-group-2';
-                        }
-                        setThirdSequence(true);
-                    }
-                ]} cursor={true} />}
-                {thirdSequence && <TypeAnimation wrapper="p" className="bio-country" sequence={[
-                    'Based In Dhaka, Bangladesh',
-                    500,
-                    (data) => {
-                        if (data != null) {
-                            data.className = 'bio-country';
-                        }
-                        setFourthSequence(true);
-                    }
-                ]} cursor={true} />}
-                {fourthSequence && <>
-                        <div className="resume-border"></div>
-                        <TypeAnimation wrapper="p" className="resume-content" sequence={[
-                            'Resume',
-                            500,
-                            (data) => {
-                                if (data != null) {
-                                    data.className = 'resume-content';
-                                }
-                            }
-                        ]}/>
-                    </>
-                }
+                <p className="bio-name">{"Hello, I'm Cupid Chakma"}</p>
+                <h2 className="bio-designation-group-1">Wordpress</h2>
+                <h2 className="bio-designation-group-2">Engineer</h2>
+                <p className="bio-country">Based In Dhaka, Bangladesh</p>
+                <div className="resume-border"></div>
+                <p className="resume-content">Resume</p>
             </div>
             <div className="section-group-2">
                 <Image src={profilePic} alt="profile-picture" />
