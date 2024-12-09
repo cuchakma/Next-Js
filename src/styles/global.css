@@ -66,7 +66,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    padding: 0px 115px 0px 115px;
+    padding: 0px 115px 180px 115px;
 }
 
 .__portfolio-body .__portfolio-body-section .section-group-1, .__portfolio-body .__portfolio-body-section .section-group-2{
@@ -75,7 +75,7 @@
 
 .__portfolio-body .__portfolio-body-section .section-group-1 .resume-border{
     height: 60px;
-    width: 160px;
+    width: 155px;
     border: 1px solid var(--resume-heading-color);
     border-radius: 6px;
 }
@@ -90,6 +90,9 @@
     position: relative;
     top: -53px;
     left: 5px;
+    height: 60px;
+    width: 155px;
+    text-transform: uppercase;
 }
 
 .__portfolio-body .__portfolio-body-section .section-group-1 .resume-border{
@@ -132,33 +135,31 @@
 }
 
 .__portfolio-about-section{
-    padding: 40px 115px 0px 115px;
+    padding: 0px 115px 80px 115px;
 }
 
-.__portfolio-about-section h1{
+.__portfolio-about-section h1, .__portfolio-work-history h1{
     color:var(--primary-color);
     font-weight: bolder;
     font-size: 100px;
+    padding: 0px 0px 20px 0px;
 }
 
 .__portfolio-about-section .work-bio{
     font-size: 24px;
     color: var(--paragraph-color-primary);
-    font-weight: 300;
+    font-weight: lighter;
+    letter-spacing: 6px;
+    width: 80%;
+    line-height: 135%;
 }
 
 .__portfolio-work-history{
-    padding: 40px 115px 0px 115px;
+    padding: 0px 115px 80px 115px;
 }
 
-.__portfolio-work-history .work-experience-heading{
-    color: var(--primary-color);
-    font-weight: bolder;
-    font-size: 100px;
-}
-
-.work-experience{
-    padding: 0px 0px 0px 200px;
+.__portfolio-work-history .work-experience{
+    padding: 0px 0px 0px 35px;
 }
 
 .work-experience .year{
@@ -166,4 +167,24 @@
     font-size: 24px;
     font-weight: bold;
     display: list-item;
+    padding: 0px 0px 10px 0px;
+}
+
+.work-experience .company-name{
+    color: var(--primary-heading-color);
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0px 0px 10px 0px;
+}
+
+.work-experience .work-information{
+    padding: 10px 15px 0px 15px;
+}
+
+.work-experience .work-information li{
+    font-size: 24px;
+    line-height: 135%;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: var(--paragraph-color-primary);
 }

@@ -2,14 +2,8 @@
 
 import Image from "next/image";
 import profilePic from '../../public/images/cupid-2.jpeg';
-import { TypeAnimation } from 'react-type-animation';
-import { useState } from "react";
 
 const Content = () => {
-    const [firstSquence, setFirstSequence] = useState(false);
-    const [secondSequence, setSecondSequence] = useState(false);
-    const [thirdSequence, setThirdSequence] = useState(false);
-    const [fourthSequence, setFourthSequence] = useState(false);
 
     return <>
         <section className="__portfolio-body-section">
